@@ -1,0 +1,222 @@
+body {
+  /* background-color: grey; */
+}
+p {
+  margin: 0;
+}
+.page-wrapper {
+  margin-top: 25px;
+  background-color: white;
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.aside-menu {
+  margin-right: 75px;
+}
+.aside-item-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aside-item {
+  width: 296px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 44px;
+}
+.aside-item-href {
+  text-decoration: none;
+  color: black;
+}
+.aside-item:hover {
+  background-color: #50c574;
+  transition: ease 0.3s;
+}
+.aside-item:hover a {
+  color: white;
+  font-weight: bold;
+  transition: ease 0.3s;
+}
+.aside-item-blue {
+  background-color: #eefbff;
+}
+.aside-item-pink {
+  background-color: #ffe8e8;
+}
+.aside-item-violet {
+  background-color: #e8eaf6;
+}
+
+.aside-item-active {
+  padding-left: 20px;
+  color: #009a00;
+}
+
+.aside-item-active::before {
+  content: url(/img/main-service-back.png);
+  margin-right: 15px;
+}
+
+.advertise {
+  text-align: center;
+  background-color: #e8eaf6;
+  background-image: url(/img/question.png);
+  background-repeat: no-repeat;
+  background-position: left 340px top 10px;
+}
+.advertise-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding-top: 25px;
+}
+.advertise-text {
+  margin-top: 10px;
+  font-size: 14px;
+  margin-bottom: 27px;
+}
+.advertise-button {
+  margin-bottom: 32px;
+  width: 165px;
+  height: 40px;
+  border: 2px solid #50c574;
+  background-color: #e8eaf6;
+  border-radius: 25px;
+  outline: none;
+  font-size: 11px;
+  font-weight: bold;
+  color: #50c574;
+}
+.advertise-button:hover {
+  background-color: #50c574;
+  color: white;
+  transition: color ease 0.5s;
+  transition: background-color ease 0.5s;
+}
+
+.page-article-wrapper {
+  display: inline-flex;
+}
+.article-image {
+  max-width: 100%;
+}
+.article-text-block {
+  margin-top: 25px;
+}
+.page-article {
+  width: 950px;
+}
+
+.article-text {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.benefits {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.benefits-title {
+  margin-bottom: 25px;
+}
+
+.benefits-item {
+  margin-bottom: 25px;
+}
+.benefits-item::before {
+  display: inline-block;
+  content: url(/img/main-service-back.png);
+  margin-right: 10px;
+}
+
+.price-container {
+  font-size: 16px;
+  display: flex;
+  height: 54px;
+  line-height: 54px;
+  border-bottom: 1px solid #d7d7df;
+}
+.price-container-header {
+  background-color: #50c574;
+  color: white;
+  font-weight: bold;
+  height: 78px;
+  line-height: 78px;
+}
+.price-name {
+  margin-left: 30px;
+  margin-right: 500px;
+}
+
+.prices-text-container {
+  margin-top: 26px;
+  font-size: 16px;
+}
+
+.our-specialists-title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.our-specialists {
+  display: flex;
+  margin-left: 32px;
+  margin-top: 25px;
+}
+
+.specialist-container {
+  height: 386px;
+  width: 284px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.specialist-title {
+  font-weight: bold;
+  font-style: 16px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.specialist-text {
+  margin-bottom: 25px;
+}
+
+.specialist-href {
+  font-size: 18px;
+  text-decoration: none;
+  color: #50c574;
+}
+
+.page-navigation {
+  width: 217px;
+  background: linear-gradient(
+    to right,
+    #50c574 0%,
+    #50c574 7%,
+    white 7%,
+    white 100%
+  );
+  text-align: left;
+  padding-bottom: 5px;
+  position: fixed;
+}
+
+.navigation-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+.navigation-item {
+  margin-bottom: 15px;
+  margin-left: 36px;
+}
+
+.page-navigation-container {
+  width: 220px;
+}
