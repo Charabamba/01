@@ -6,50 +6,52 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalizer.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/97f7254657.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section class="page-wrapper">
       <aside class="aside-menu">
-        <ul class="aside-item-list">
-          <li class="aside-item aside-item-blue aside-item-first">
-            <a href="index.html" class="aside-item-href aside-item-active"
-              >АНАЛИЗЫ</a
-            >
-          </li>
-          <li class="aside-item ">
-            <a href="" class="aside-item-href ">ДЕТСКИЙ ОТОРИНОЛАРИНГОЛОГ</a>
-          </li>
-          <li class="aside-item aside-item-pink">
-            <a href="" class="aside-item-href">ДЕТСКИЙ УРОЛОГ</a>
-          </li>
-          <li class="aside-item aside-item-violet">
-            <a href="" class="aside-item-href">ДЕТСКИЙ НЕВРОЛОГ</a>
-          </li>
-          <li class="aside-item">
-            <a href="" class="aside-item-href">ПЕДИАТР</a>
-          </li>
-          <li class="aside-item aside-item-blue">
-            <a href="" class="aside-item-href">ОТОАККУСТИЧЕСКАЯ КОМИССИЯ</a>
-          </li>
-          <li class="aside-item aside-item-violet">
-            <a href="" class="aside-item-href">АНАЛИЗЫ</a>
-          </li>
-          <li class="aside-item aside-item-pink">
-            <a href="" class="aside-item-href">ДЕТСКИЙ ОТОРИНОЛАРИНГОЛОГ</a>
-          </li>
-          <li class="aside-item aside-item-blue">
-            <a href="" class="aside-item-href">ДЕТСКИЙ УРОЛОГ</a>
-          </li>
-          <li class="aside-item">
-            <a href="" class="aside-item-href">ДЕТСКИЙ НЕВРОЛОГ</a>
-          </li>
-          <li class="aside-item aside-item-pink">
-            <a href="" class="aside-item-href">ПЕДИАТР</a>
-          </li>
-          <li class="aside-item aside-item-blue">
-            <a href="" class="aside-item-href">ОТОАККУСТИЧЕСКАЯ КОМИССИЯ</a>
-          </li>
-        </ul>
+        <div class="aside-item-list">
+          <a href="" class="aside-item aside-item-blue aside-item-first">
+            <p class="aside-item-href aside-item-active">АНАЛИЗЫ</p>
+          </a>
+          <a href="" class="aside-item aside-item-white ">
+            <p class="aside-item-href ">ДЕТСКИЙ ОТОРИНОЛАРИНГОЛОГ</p>
+          </a>
+          <a href="" class="aside-item aside-item-pink">
+            <p class="aside-item-href">ДЕТСКИЙ УРОЛОГ</p>
+          </a>
+          <a href="" class="aside-item aside-item-violet">
+            <p class="aside-item-href">ДЕТСКИЙ НЕВРОЛОГ</p>
+          </a>
+          <a href="" class="aside-item aside-item-white">
+            <p class="aside-item-href ">ПЕДИАТР</p>
+          </a>
+          <a href="" class="aside-item aside-item-blue">
+            <p class="aside-item-href">ОТОАККУСТИЧЕСКАЯ КОМИССИЯ</p>
+          </a>
+          <a href="" class="aside-item aside-item-violet">
+            <p class="aside-item-href">АНАЛИЗЫ</p>
+          </a>
+          <a href="" class="aside-item aside-item-pink">
+            <p class="aside-item-href">ДЕТСКИЙ ОТОРИНОЛАРИНГОЛОГ</p>
+          </a>
+          <a href="" class="aside-item aside-item-blue">
+            <p class="aside-item-href">ДЕТСКИЙ УРОЛОГ</p>
+          </a>
+          <a href="" class="aside-item aside-item-white">
+            <p class="aside-item-href ">ДЕТСКИЙ НЕВРОЛОГ</p>
+          </a>
+          <a href="" class="aside-item aside-item-pink">
+            <p class="aside-item-href">ПЕДИАТР</p>
+          </a>
+          <a href="" class="aside-item aside-item-blue">
+            <p class="aside-item-href">ОТОАККУСТИЧЕСКАЯ КОМИССИЯ</p>
+          </a>
+        </div>
       </aside>
       <section class="main-content-wrapper">
         <div class="advertise">
@@ -63,7 +65,7 @@
           <button class="advertise-button">ЗАПИСАТЬСЯ</button>
         </div>
         <div class="page-article-wrapper">
-          <article class="page-article">
+          <article class="page-article" id="description">
             <div class="article-text-block">
               <p class="article-text">
                 Фраза: «Необходимо сдать анализы ребенку» пугает каждого
@@ -85,7 +87,7 @@
               </p>
             </div>
             <img src="/img/analizi.png" alt="analizi" class="article-image" />
-            <div class="benefits">
+            <div class="benefits" id="reasons">
               <p class="benefits-title">
                 Причины по которым возникает необходимость сдать платные анализы
                 ребенку, могут быть самыми разными;
@@ -101,7 +103,7 @@
                 анализ реакции организма на вакцинацию и многие другие.
               </p>
             </div>
-            <div class="prices">
+            <div class="prices" id="prices">
               <div class="price-container price-container-header">
                 <div class="price-name">Наименование услуги</div>
                 <div class="price">Стоимость, руб</div>
@@ -134,10 +136,12 @@
                 </p>
               </div>
             </div>
-            <h2 class="our-specialists-title">Наши специалисты</h2>
-            <section class="our-specialists">
+            <h2 class="our-specialists-title" id="specialists">
+              Наши специалисты
+            </h2>
+            <section class="our-specialists ">
               <div class="specialist-container">
-                <div class="specialist-info">
+                <a href="" class="specialist-info">
                   <img
                     src="img/бабошко.png"
                     alt="specialist"
@@ -147,11 +151,14 @@
                   <p class="specialist-text">
                     детский хирург, уролог-андролог, врач высшей категории
                   </p>
-                </div>
-                <a href="" class="specialist-href">ЗАПИСАТЬСЯ</a>
+                </a>
+                <a href="" class="specialist-href-container"
+                  ><p class="specialist-href">ЗАПИСАТЬСЯ</p>
+                  <i class="fas fa-pen specialist-icon"></i
+                ></a>
               </div>
               <div class="specialist-container">
-                <div class="specialist-info">
+                <a href="" class="specialist-info">
                   <img
                     src="img/демьяник.png"
                     alt="specialist"
@@ -161,11 +168,14 @@
                   <p class="specialist-text">
                     детский невролог, врач педиатр, врач высшей категории
                   </p>
-                </div>
-                <a href="" class="specialist-href">ЗАПИСАТЬСЯ</a>
+                </a>
+                <a href="" class="specialist-href-container"
+                  ><p class="specialist-href">ЗАПИСАТЬСЯ</p>
+                  <i class="fas fa-pen specialist-icon"></i
+                ></a>
               </div>
               <div class="specialist-container">
-                <div class="specialist-info">
+                <a href="" class="specialist-info">
                   <img
                     src="img/демьяник.png"
                     alt="specialist"
@@ -175,18 +185,33 @@
                   <p class="specialist-text">
                     детский невролог, врач педиатр, врач высшей категории
                   </p>
-                </div>
-                <a href="" class="specialist-href">ЗАПИСАТЬСЯ</a>
+                </a>
+                <a href="" class="specialist-href-container"
+                  ><p class="specialist-href">ЗАПИСАТЬСЯ</p>
+                  <i class="fas fa-pen specialist-icon"></i
+                ></a>
               </div>
             </section>
           </article>
           <div class="page-navigation-container">
             <div class="page-navigation">
               <p class="navigation-title">Содержание</p>
-              <p class="navigation-item">Об услуге</p>
-              <p class="navigation-item">Причины сдать платные анализы</p>
-              <p class="navigation-item">Таблица цен</p>
-              <p class="navigation-item">Наши специалисты</p>
+              <p class="navigation-item">
+                <a class="navigation-href" href="#description">Об услуге </a>
+              </p>
+              <p class="navigation-item">
+                <a class="navigation-href" href="#reasons"
+                  >Причины сдать платные анализы</a
+                >
+              </p>
+              <p class="navigation-item">
+                <a class="navigation-href" href="#prices">Таблица цен</a>
+              </p>
+              <p class="navigation-item">
+                <a class="navigation-href" href="#specialists"
+                  >Наши специалисты</a
+                >
+              </p>
             </div>
           </div>
         </div>

@@ -1,31 +1,32 @@
-body {
-  /* background-color: grey; */
-}
 p {
   margin: 0;
 }
+
 .page-wrapper {
   margin-top: 25px;
-  background-color: white;
-  display: flex;
+  max-width: 1640px;
+  background-color: #f2f2f2;
+  display: inline-flex;
   margin: 0 auto;
-  max-width: 100%;
 }
-
 .aside-menu {
-  margin-right: 75px;
+  margin-right: 36px;
 }
 .aside-item-list {
-  list-style-type: none;
   padding: 0;
   margin: 0;
+  font-weight: bold;
 }
 
 .aside-item {
+  display: flex;
   width: 296px;
-  height: 50px;
-  line-height: 50px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 44px;
+  align-items: center;
+  text-decoration: none;
 }
 .aside-item-href {
   text-decoration: none;
@@ -35,7 +36,7 @@ p {
   background-color: #50c574;
   transition: ease 0.3s;
 }
-.aside-item:hover a {
+.aside-item:hover p {
   color: white;
   font-weight: bold;
   transition: ease 0.3s;
@@ -49,15 +50,30 @@ p {
 .aside-item-violet {
   background-color: #e8eaf6;
 }
-
-.aside-item-active {
+.aside-item-white {
+  background-color: white;
+}
+.aside-li-active {
   padding-left: 20px;
+  width: 320px;
+}
+.aside-item-active {
+  position: relative;
   color: #009a00;
+  margin-left: 15px;
 }
 
 .aside-item-active::before {
   content: url(/img/main-service-back.png);
-  margin-right: 15px;
+  position: absolute;
+  top: -5px;
+  left: -40px;
+}
+
+.main-content-wrapper {
+  background-color: grey;
+  position: relative;
+  /* width: 100%; */
 }
 
 .advertise {
@@ -65,7 +81,7 @@ p {
   background-color: #e8eaf6;
   background-image: url(/img/question.png);
   background-repeat: no-repeat;
-  background-position: left 340px top 10px;
+  background-position: left 30% top 10px;
 }
 .advertise-title {
   font-size: 25px;
@@ -108,7 +124,7 @@ p {
   margin-top: 25px;
 }
 .page-article {
-  width: 950px;
+  max-width: 950px;
 }
 
 .article-text {
@@ -123,15 +139,22 @@ p {
 
 .benefits-title {
   margin-bottom: 25px;
+  margin-left: 20px;
 }
 
 .benefits-item {
   margin-bottom: 25px;
+  margin-left: 50px;
+  position: relative;
 }
 .benefits-item::before {
   display: inline-block;
   content: url(/img/main-service-back.png);
-  margin-right: 10px;
+  transform: scale(0.8);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -50px;
 }
 
 .price-container {
@@ -184,14 +207,40 @@ p {
 .specialist-text {
   margin-bottom: 25px;
 }
+.specialist-info {
+  text-decoration: none;
+  color: black;
+}
+.specialist-href-container {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.specialist-href-container:hover .specialist-href {
+  color: #009a00;
+  transition: ease 0.3s;
+}
+.specialist-href-container:hover .specialist-icon {
+  color: #009a00;
+  transition: ease 0.3s;
+}
 
 .specialist-href {
   font-size: 18px;
-  text-decoration: none;
+  color: #50c574;
+  margin-right: 10px;
+}
+.specialist-icon {
   color: #50c574;
 }
 
+.page-navigation-container {
+  width: 272px;
+  position: relative;
+}
 .page-navigation {
+  margin-top: 35px;
+  margin-left: 55px;
   width: 217px;
   background: linear-gradient(
     to right,
@@ -203,6 +252,7 @@ p {
   text-align: left;
   padding-bottom: 5px;
   position: fixed;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
 .navigation-title {
@@ -216,7 +266,22 @@ p {
   margin-bottom: 15px;
   margin-left: 36px;
 }
+.navigation-href {
+  text-decoration: none;
+  color: black;
+}
+.navigation-href:hover {
+  color: #50c574;
+  text-decoration: underline;
+}
 
-.page-navigation-container {
-  width: 220px;
+@media (max-width: 320px) {
+  .page-wrapper {
+    flex-wrap: wrap;
+  }
+  .aside-menu {
+    order: 2;
+    width: 100%;
+    background-color: honeydew;
+  }
 }

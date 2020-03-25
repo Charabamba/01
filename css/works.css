@@ -1,3 +1,9 @@
+.works-wrapper {
+  margin-top: 25px;
+  max-width: 1640px;
+  display: flex;
+}
+
 .works-grid-container {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -65,8 +71,7 @@
   .aside-item {
     width: 250px;
     height: 50px;
-    line-height: 50px;
-    padding-left: 10px;
+    padding-left: 30px;
   }
 }
 @media (max-width: 700px) {
